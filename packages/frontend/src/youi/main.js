@@ -13,7 +13,7 @@ import "@sap-devx/inquirer-gui-auto-complete-plugin/dist/autoCompletePlugin.css"
 import "@sap-devx/inquirer-gui-label-plugin/dist/labelPlugin.css";
 import "@sap-devx/inquirer-gui-tiles-plugin/dist/tilesPlugin.css";
 import Form from "@sap-devx/inquirer-gui";
-
+import NavigatorControl from "@sap-devx/controls-navigator";
 const plugins = [];
 
 const app = createApp(YoUiApp, {
@@ -48,5 +48,6 @@ plugins.push(options.plugin);
 
 const formOptions = { vuetify };
 app.use(Form, formOptions);
-
+const naviOptions = { vuetify };
+app.use(NavigatorControl, naviOptions);
 app.mount("#app");
