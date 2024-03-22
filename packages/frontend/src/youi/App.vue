@@ -24,7 +24,7 @@
 
     <v-row class="main-row ma-0 pa-0">
       <v-col class="left-col ma-0 pa-0" cols="3">
-        <YOUINavigation
+        <NavigatorControl
           v-if="prompts.length"
           :prompt-index="promptIndex"
           :prompts="prompts"
@@ -107,7 +107,7 @@
 import { reactive } from "vue";
 import Loading from "vue-loading-overlay";
 import YOUIHeader from "../components/YOUIHeader.vue";
-import YOUINavigation from "../components/YOUINavigation.vue";
+//import YOUINavigation from "../components/YOUINavigation.vue";
 import YOUIDone from "../components/YOUIDone.vue";
 import YOUIInfo from "../components/YOUIInfo.vue";
 import YOUIPromptInfo from "../components/YOUIPromptInfo.vue";
@@ -124,7 +124,8 @@ import _isEmpty from "lodash/isEmpty";
 import { Severity } from "@sap-devx/yeoman-ui-types";
 import utils from "../utils/utils";
 import answerUtils from "../utils/answerUtils";
-
+import "@sap-devx/controls-navigator/dist/navigator-control.css";
+  
 const FUNCTION = "__Function";
 const PENDING = "pending";
 const EVALUATING = "evaluating";
@@ -172,7 +173,7 @@ export default {
   name: "App",
   components: {
     YOUIHeader,
-    YOUINavigation,
+    //YOUINavigation,
     YOUIDone,
     YOUIInfo,
     YOUIPromptInfo,
