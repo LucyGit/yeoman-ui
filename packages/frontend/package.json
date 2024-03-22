@@ -67,6 +67,7 @@
     "@sap-devx/inquirer-gui-label-plugin": "3.0.3",
     "@sap-devx/inquirer-gui-login-plugin": "3.0.3",
     "@sap-devx/inquirer-gui-tiles-plugin": "3.0.3",
+    "@sap-devx/controls-navigator": "file:sap-devx-controls-navigator-1.0.0.tgz",
     "@sap-devx/webview-rpc": "0.4.1",
     "@sap-devx/yeoman-ui-types": "^1.16.1",
     "core-js": "^3.8.3",
